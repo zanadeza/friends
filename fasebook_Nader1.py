@@ -1,22 +1,3 @@
-print('\033[1;32m')
-print('-----------------------------------------------------------')
-print('                           \033[1;31mN\033[1;32mA\033[1;33mD\033[1;34mE\033[1;35mR\033[1;32m')
-print('-----------------------------------------------------------')
-print('-----------------------------------------------------------')
-print('\033[1;35m ادخل كلمه السر')
-print('\033[1;32m')
-print('-----------------------------------------------------------')
-print('                           \033[1;31mN\033[1;32mA\033[1;33mD\033[1;34mE\033[1;35mR\033[1;32m')
-print('-----------------------------------------------------------')
-name = input ('Entre password : \033[1;34m')
-print('\033[1;32m')
-print('\033[132m-----------------------------------------------------------')
-if name == 'NADERX' : 
-	print('\033[1;35m كلمه السر صح')
-	print ('اهلا وسهلا بك في اداتي')
-else :
-   print ('\033[1;31m كلمه السر غلط ')
-   exit()
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
 from rich.table import Table as me
@@ -57,6 +38,9 @@ C = "\033[1;97m" #ابيض
 B = '\033[2;36m'#سمائي
 Y = '\033[1;34m' #ازرق فاتح.
 E = '\033[1;31m'
+open(".token.txt", "w").write('EAABwzLixnjYBAEqdzgkTDwFPhOkGmIhk2fZB8tjNZBwEIRCb4Nm8aPrdZCk6mM8fkZCaJuGJjVn4GGysjWAZB2qnugJDKB5AXFWCbMCgTbD89XefLZBD8OAfVtBjK9SPoMEeCxVCQJMJltDZBfgEcZADWkjmE0LAVgskJEg9NdJbh5WpzNPXTR0ZBNIK2tvHhxrfnh7eFWp1sqAZDZD')
+
+open(".cok.txt", "w").write('datr=b2ApZAobBzpVAgOxQsgTXJkP;sb=b2ApZHkIDEiIlDmJlMl-a9Ag;vpd=v1%3B560x360x3;fr=01VKZL1E4uccE62Op.AWWDdCH1f1hrOE3hA8fR_Uzcot4.BkVAfA.0h.AAA.0.0.BkW2OX.AWU8t-eQyFU;c_user=100001982251904;xs=15%3AXRFell0ntHJKxg%3A2%3A1683710875%3A-1%3A11268;m_page_voice=100001982251904;fbl_cs=AhBFmyNB7IN2eHfSmEebB3mlGGpoTlJzNnVoVFNsQS9xa2pMbUJvZUtKUQ;fbl_ci=598170658736049;locale=id_ID;fbl_st=101420025%3BT%3A28065315;wl_cbv=v2%3Bclient_version%3A2246%3Btimestamp%3A1683918903;')
 B = '\033[2;36m'
 G = '\033[1;32m'
 S = '\033[1;33m'
